@@ -1,0 +1,6 @@
+pre-push:
+    commands:
+        lint:
+            run: eslint ./*.js
+        prettify:
+            run: prettier --write './*.js'
