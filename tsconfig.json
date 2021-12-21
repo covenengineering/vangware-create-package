@@ -1,0 +1,16 @@
+{
+	"extends": "./node_modules/@vangware/configs/.tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./dist"
+	},
+	"include": [
+		"./src/**/*.cjs",
+		"./src/**/*.cts",
+		"./src/**/*.js",
+		"./src/**/*.jsx",
+		"./src/**/*.mjs",
+		"./src/**/*.mts",
+		"./src/**/*.ts",
+		"./src/**/*.tsx"
+	]
+}
