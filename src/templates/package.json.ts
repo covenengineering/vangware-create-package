@@ -1,7 +1,7 @@
 import { HOST, USER } from "../constants.js";
-import type { Answers } from "../types/Answers.js";
+import type { TemplateData } from "../types/TemplateData.js";
 
-export default ({ name, description }: Answers) =>
+export default ({ name, description, devDependencies }: TemplateData) =>
 	JSON.stringify(
 		{
 			name,
@@ -15,9 +15,34 @@ export default ({ name, description }: Answers) =>
 				url: "https://vangware.com",
 			},
 			bugs: `${HOST}/${USER}/${name}/issues`,
+			devDependencies: Object.fromEntries(
+				[
+					"@types/eslint",
+					"@types/node",
+					"@types/prettier",
+					"@typescript-eslint/eslint-plugin",
+					"@typescript-eslint/parser",
+					"@vangware/configs",
+					"@vangware/test",
+					"c8",
+					"eslint",
+					"eslint-config-prettier",
+					"eslint-import-resolver-node",
+					"eslint-plugin-ban",
+					"eslint-plugin-functional",
+					"eslint-plugin-import",
+					"eslint-plugin-no-null",
+					"eslint-plugin-prefer-arrow",
+					"eslint-plugin-prettier",
+					"npm-run-all",
+					"prettier",
+					"rimraf",
+					"typedoc",
+					"typescript",
+				].map(key => [key, devDependencies[key]]),
+			),
 			exports: {
-				import: "./dist/import/index.js",
-				require: "./dist/require/index.js",
+				".": "./dist/index.js",
 			},
 			files: ["dist"],
 			homepage: `${HOST}/${USER}/${name}#readme`,
@@ -31,13 +56,16 @@ export default ({ name, description }: Answers) =>
 				clean: "rimraf ./dist",
 				compile: "tsc --project ./tsconfig.dist.json",
 				document: "typedoc",
-				lint: "eslint ./src/*.ts",
+				lint: "eslint {src,tests}/*.ts",
 				"lint:fix": "eslint {src,tests}/**/*.ts --fix",
+				"pre-compile": "tsc --noEmit --project tsconfig.dist.json",
 				prepublishOnly: "run-s clean compile prettify",
 				prettify:
 					"prettier --write --loglevel warn './dist/**/*.{js,ts}'",
+				test: "NODE_OPTIONS='--loader ts-node/esm' c8 test",
 			},
-			types: "./dist/import/index.d.ts",
+			type: "module",
+			types: "./dist/index.d.ts",
 		},
 		undefined,
 		"	",
