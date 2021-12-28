@@ -1,3 +1,4 @@
+import type { ReadOnlyRecord } from "@vangware/types";
 import { readFile } from "node:fs/promises";
 import { sourceURL } from "./sourceURL.js";
 
@@ -8,6 +9,6 @@ export const getPackageDevDependencies = () =>
 			({
 				devDependencies,
 			}: {
-				readonly devDependencies: Record<string, string>;
+				readonly devDependencies: ReadOnlyRecord<string, string>;
 			}) => devDependencies,
 		);

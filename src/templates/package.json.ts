@@ -1,5 +1,6 @@
 import { HOST, USER } from "../constants.js";
 import type { TemplateData } from "../types/TemplateData.js";
+import { userClean } from "../userClean.js";
 
 export default ({ name, description, devDependencies }: TemplateData) =>
 	JSON.stringify(
@@ -14,7 +15,7 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 				name: "Vangware",
 				url: "https://vangware.com",
 			},
-			bugs: `${HOST}/${USER}/${name}/issues`,
+			bugs: `${HOST}/${USER}/${userClean(name)}/issues`,
 			devDependencies: Object.fromEntries(
 				[
 					"@types/eslint",
@@ -24,6 +25,7 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 					"@typescript-eslint/parser",
 					"@vangware/configs",
 					"@vangware/test",
+					"@vangware/types",
 					"c8",
 					"eslint",
 					"eslint-config-prettier",
@@ -45,12 +47,12 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 				".": "./dist/index.js",
 			},
 			files: ["dist"],
-			homepage: `${HOST}/${USER}/${name}#readme`,
+			homepage: `${HOST}/${USER}/${userClean(name)}#readme`,
 			keywords: ["typescript", "vangware"],
 			license: "MIT",
 			repository: {
 				type: "git",
-				url: `${HOST}/${USER}/${name}`,
+				url: `${HOST}/${USER}/${userClean(name)}.git`,
 			},
 			scripts: {
 				clean: "rimraf ./dist",
