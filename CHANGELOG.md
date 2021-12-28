@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.4
+
+-   :pencil2: fix wrong path to `constants.js` (I need to add tests -\_-).
+
 ## 1.0.3
 
 -   :bug: fix missing final log. Improved types and fixed linting.
