@@ -11,6 +11,14 @@
 		"./src/**/*.mjs",
 		"./src/**/*.mts",
 		"./src/**/*.ts",
-		"./src/**/*.tsx"
+		"./src/**/*.tsx",
+		"./tests/**/*.cjs",
+		"./tests/**/*.cts",
+		"./tests/**/*.js",
+		"./tests/**/*.jsx",
+		"./tests/**/*.mjs",
+		"./tests/**/*.mts",
+		"./tests/**/*.ts",
+		"./tests/**/*.tsx"
 	]
 }
