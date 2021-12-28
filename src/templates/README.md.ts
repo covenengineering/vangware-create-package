@@ -1,6 +1,6 @@
-import type { Answers } from "../types/Answers.js";
+import type { TemplateData } from "../types/TemplateData.js";
 
-export default ({ name, description }: Answers) => `# ${name}
+export default ({ name, description }: TemplateData) => `# ${name}
 
 ${description}
 
