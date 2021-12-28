@@ -39,6 +39,7 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 					"npm-run-all",
 					"prettier",
 					"rimraf",
+					"ts-node",
 					"typedoc",
 					"typescript",
 				].map(key => [key, devDependencies[key]]),

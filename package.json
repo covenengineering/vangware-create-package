@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/create-package",
 	"description": "Vangware's package creation tool",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -36,6 +36,7 @@
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.5.1",
 		"rimraf": "^3.0.2",
+		"ts-node": "^10.4.0",
 		"typedoc": "^0.22.10",
 		"typescript": "^4.5.4"
 	},
