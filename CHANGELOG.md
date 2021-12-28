@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.5
+
+-   :bug: add missing `ts-node`.
+-   :bug: better `tsconfig.json`.
+-   :art: better docs by default in the placeholder greet function.
+
 ## 1.0.4
 
 -   :pencil2: fix wrong path to `constants.js` (I need to add tests -\_-).
