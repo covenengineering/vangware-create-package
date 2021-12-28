@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/create-package",
 	"description": "Vangware's package creation tool",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -22,6 +22,7 @@
 		"@typescript-eslint/parser": "^5.8.1",
 		"@vangware/configs": "^1.0.9",
 		"@vangware/test": "^8.0.0",
+		"@vangware/types": "^2.0.1",
 		"c8": "^7.10.0",
 		"eslint": "^8.5.0",
 		"eslint-config-prettier": "^8.3.0",
