@@ -3,6 +3,8 @@
 import { copyBase } from "./copyBase.js";
 import { copyTemplates } from "./copyTemplates.js";
 import { createDirectory } from "./createDirectory.js";
+import { doneMessage } from "./doneMessage.js";
+import { getPackageDevDependencies } from "./getPackageDevDependencies.js";
 import { getPackageVersion } from "./getPackageVersion.js";
 import { prompt } from "./prompt.js";
 
@@ -12,7 +14,11 @@ export default getPackageVersion()
 	.then(answers =>
 		createDirectory(answers.name)
 			.then(copyBase(answers.name))
-			.then(copyTemplates(answers)),
+			.then(getPackageDevDependencies)
+			.then(devDependencies =>
+				copyTemplates({ ...answers, devDependencies }),
+			)
+			.then(() => answers),
 	)
-	.then(() => console.log("Done!"))
+	.then(doneMessage)
 	.catch(console.error);
