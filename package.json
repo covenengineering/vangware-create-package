@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/create-package",
 	"description": "Vangware's package creation tool",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -10,25 +10,25 @@
 	"bin": "./dist/index.js",
 	"bugs": "https://github.com/vangware/create-package/issues",
 	"dependencies": {
-		"@vangware/ansi": "^2.0.12",
+		"@vangware/ansi": "^3.0.2",
 		"prompts": "^2.4.2"
 	},
 	"devDependencies": {
-		"@types/eslint": "8.2.1",
-		"@types/node": "17.0.0",
+		"@types/eslint": "^8.2.1",
+		"@types/node": "^17.0.5",
 		"@types/prettier": "^2.4.2",
 		"@types/prompts": "^2.0.14",
-		"@typescript-eslint/eslint-plugin": "5.7.0",
-		"@typescript-eslint/parser": "5.7.0",
-		"@vangware/configs": "^1.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.8.1",
+		"@typescript-eslint/parser": "^5.8.1",
+		"@vangware/configs": "^1.0.9",
 		"@vangware/test": "^8.0.0",
 		"c8": "^7.10.0",
-		"eslint": "8.5.0",
-		"eslint-config-prettier": "8.3.0",
+		"eslint": "^8.5.0",
+		"eslint-config-prettier": "^8.3.0",
 		"eslint-import-resolver-node": "^0.3.6",
 		"eslint-plugin-ban": "^1.6.0",
 		"eslint-plugin-functional": "^4.0.2",
-		"eslint-plugin-import": "2.25.3",
+		"eslint-plugin-import": "^2.25.3",
 		"eslint-plugin-no-null": "^1.0.2",
 		"eslint-plugin-prefer-arrow": "^1.2.3",
 		"eslint-plugin-prettier": "^4.0.0",
@@ -36,7 +36,7 @@
 		"prettier": "^2.5.1",
 		"rimraf": "^3.0.2",
 		"typedoc": "^0.22.10",
-		"typescript": "4.5.4"
+		"typescript": "^4.5.4"
 	},
 	"files": [
 		"dist/*",
