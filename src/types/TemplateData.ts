@@ -1,5 +1,6 @@
+import type { ReadOnlyRecord } from "@vangware/types";
 import type { Answers } from "./Answers.js";
 
 export type TemplateData = Answers & {
-	readonly devDependencies: Record<string, string>;
+	readonly devDependencies: ReadOnlyRecord<string, string>;
 };
