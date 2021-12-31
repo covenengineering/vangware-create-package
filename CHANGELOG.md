@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.7
+
+-   :arrow_up: dependency upgrade.
+-   :bug: possible Windows path fix.
+
 ## 1.0.6
 
 -   :wrench: update `package.json` description and `README.md` badges.
