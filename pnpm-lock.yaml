@@ -7,11 +7,11 @@ specifiers:
   '@types/prompts': ^2.0.14
   '@typescript-eslint/eslint-plugin': ^5.8.1
   '@typescript-eslint/parser': ^5.8.1
-  '@vangware/ansi': ^3.0.2
-  '@vangware/configs': ^1.0.9
-  '@vangware/test': ^8.0.0
-  '@vangware/types': ^2.0.1
-  c8: ^7.10.0
+  '@vangware/ansi': ^3.0.3
+  '@vangware/configs': ^1.0.10
+  '@vangware/test': ^8.0.1
+  '@vangware/types': ^2.0.2
+  c8: ^7.11.0
   eslint: ^8.5.0
   eslint-config-prettier: ^8.3.0
   eslint-import-resolver-node: ^0.3.6
@@ -30,7 +30,7 @@ specifiers:
   typescript: ^4.5.4
 
 dependencies:
-  '@vangware/ansi': 3.0.2
+  '@vangware/ansi': 3.0.3
   prompts: 2.4.2
 
 devDependencies:
@@ -40,10 +40,10 @@ devDependencies:
   '@types/prompts': 2.0.14
   '@typescript-eslint/eslint-plugin': 5.8.1_3a47348159e115370aa4cba56aba33b6
   '@typescript-eslint/parser': 5.8.1_eslint@8.5.0+typescript@4.5.4
-  '@vangware/configs': 1.0.9
-  '@vangware/test': 8.0.0
-  '@vangware/types': 2.0.1
-  c8: 7.10.0
+  '@vangware/configs': 1.0.10
+  '@vangware/test': 8.0.1
+  '@vangware/types': 2.0.2
+  c8: 7.11.0
   eslint: 8.5.0
   eslint-config-prettier: 8.3.0_eslint@8.5.0
   eslint-import-resolver-node: 0.3.6
@@ -295,24 +295,24 @@ packages:
       eslint-visitor-keys: 3.1.0
     dev: true
 
-  /@vangware/ansi/3.0.2:
-    resolution: {integrity: sha512-pNntb5huewPL8il+xycbWV9mKA1nQaNA94g9nki0U/hyyzCcQZAfmpRJAYx1EuPUamhvvltouFDrW73dCuYfrg==}
+  /@vangware/ansi/3.0.3:
+    resolution: {integrity: sha512-ovadfEEmbCWfaTTOBX1Lf5HZgVyvY5eG0ihbaaXhxogmhxRsGlc2pUiehHfPIGLeu/1yu4LgqruoVtK6cwv8LQ==}
 
-  /@vangware/configs/1.0.9:
-    resolution: {integrity: sha512-TNWDba+S9h2vgyMGr3hmf1nE8M+YFwwMAq1wI94Rs7G5N43kynxIFif0TW2kVXq4zSkBYn7aPH8ndUKsZEhGFg==}
+  /@vangware/configs/1.0.10:
+    resolution: {integrity: sha512-8aS28siIhbwsm4v7ql+S/cvM8kvorwmlYKmAZEVNZNLpjGpg+Gyg8uFC4maAh0D4itb5ZF3cJ3sbV06E+Ff9hw==}
     dev: true
 
-  /@vangware/test/8.0.0:
-    resolution: {integrity: sha512-EPUXKRTSmErCwRIqHekZaw1rYqvvWNtXacJHODGd4N0WtfGmYqXYdtRrROiFaJZEaIFVOI74nUFowX1R2HEoLw==}
+  /@vangware/test/8.0.1:
+    resolution: {integrity: sha512-bCpU98VN52dTJ0CY9Z7LOvnSKkFxCCQwge+CvLJVHy3hCqgZ9ttnzhRCH/O0tgEspW6VF1+zNUwlHyFSWebPTA==}
     hasBin: true
     dependencies:
-      '@vangware/ansi': 3.0.2
-      '@vangware/types': 2.0.1
+      '@vangware/ansi': 3.0.3
+      '@vangware/types': 2.0.2
       diff: 5.0.0
     dev: true
 
-  /@vangware/types/2.0.1:
-    resolution: {integrity: sha512-DVW3LZncNhAqpPeOU46Jay4ZwOSUX2IwYwnCZ+SZ+iphci/U34YE2nZfYwrygzopvet7LSqsYr6ndMmvB1la2Q==}
+  /@vangware/types/2.0.2:
+    resolution: {integrity: sha512-x11eqlOqy8rbq0BmiyemcDcnSSFLt35bT4RATh2acE7CjFsTJdr031Z+z7CmWzqu8hLaAmlKZH3ll4eimZjiaQ==}
     dev: true
 
   /acorn-jsx/5.3.2_acorn@8.7.0:
@@ -418,8 +418,8 @@ packages:
       fill-range: 7.0.1
     dev: true
 
-  /c8/7.10.0:
-    resolution: {integrity: sha512-OAwfC5+emvA6R7pkYFVBTOtI5ruf9DahffGmIqUc9l6wEh0h7iAFP6dt/V9Ioqlr2zW5avX9U9/w1I4alTRHkA==}
+  /c8/7.11.0:
+    resolution: {integrity: sha512-XqPyj1uvlHMr+Y1IeRndC2X5P7iJzJlEJwBpCdBbq2JocXOgJfr+JVfJkyNMGROke5LfKrhSFXGFXnwnRJAUJw==}
     engines: {node: '>=10.12.0'}
     hasBin: true
     dependencies:
@@ -429,7 +429,7 @@ packages:
       foreground-child: 2.0.0
       istanbul-lib-coverage: 3.2.0
       istanbul-lib-report: 3.0.0
-      istanbul-reports: 3.1.2
+      istanbul-reports: 3.1.3
       rimraf: 3.0.2
       test-exclude: 6.0.0
       v8-to-istanbul: 8.1.0
@@ -1272,8 +1272,8 @@ packages:
       supports-color: 7.2.0
     dev: true
 
-  /istanbul-reports/3.1.2:
-    resolution: {integrity: sha512-0gHxuT1NNC0aEIL1zbJ+MTgPbbHhU77eJPuU35WKA7TgXiSNlCAx4PENoMrH0Or6M2H80TaZcWKhM0IK6V8gRw==}
+  /istanbul-reports/3.1.3:
+    resolution: {integrity: sha512-x9LtDVtfm/t1GFiLl3NffC7hz+I1ragvgX1P/Lg1NlIagifZDKUkuuaAxH/qpwj2IuEfD8G2Bs/UKp+sZ/pKkg==}
     engines: {node: '>=8'}
     dependencies:
       html-escaper: 2.0.2
