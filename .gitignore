@@ -150,3 +150,8 @@ $RECYCLE.BIN/
 
 # Build
 dist
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
