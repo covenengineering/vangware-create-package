@@ -27,7 +27,6 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 					"@vangware/test",
 					"@vangware/types",
 					"c8",
-					"cross-env",
 					"eslint",
 					"eslint-config-prettier",
 					"eslint-import-resolver-node",
@@ -66,7 +65,7 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 				prepublishOnly: "run-s clean compile prettify",
 				prettify:
 					"prettier --write --loglevel warn './dist/**/*.{js,ts}'",
-				test: "cross-env NODE_OPTIONS='--loader ts-node/esm' c8 test",
+				test: "NODE_OPTIONS='--loader ts-node/esm' c8 test",
 			},
 			type: "module",
 			types: "./dist/index.d.ts",

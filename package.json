@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/create-package",
 	"description": "🚧 Project creation script",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -10,7 +10,7 @@
 	"bin": "./dist/index.js",
 	"bugs": "https://github.com/vangware/create-package/issues",
 	"dependencies": {
-		"@vangware/ansi": "^3.0.3",
+		"@vangware/ansi": "^3.0.4",
 		"prompts": "^2.4.2"
 	},
 	"devDependencies": {
@@ -20,11 +20,10 @@
 		"@types/prompts": "^2.0.14",
 		"@typescript-eslint/eslint-plugin": "^5.9.0",
 		"@typescript-eslint/parser": "^5.9.0",
-		"@vangware/configs": "^1.0.11",
-		"@vangware/test": "^8.0.1",
-		"@vangware/types": "^2.0.2",
+		"@vangware/configs": "^1.0.12",
+		"@vangware/test": "^8.0.2",
+		"@vangware/types": "^2.0.3",
 		"c8": "^7.11.0",
-		"cross-env": "^7.0.3",
 		"eslint": "^8.6.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-import-resolver-node": "^0.3.6",
@@ -52,7 +51,10 @@
 		"package"
 	],
 	"license": "MIT",
-	"repository": "vangware/create-package",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vangware/create-package.git"
+	},
 	"scripts": {
 		"clean": "rimraf ./dist",
 		"compile": "tsc",
