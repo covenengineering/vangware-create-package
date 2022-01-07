@@ -10,10 +10,8 @@ import { getPackageVersion } from "./getPackageVersion.js";
 import { prompt } from "./prompt.js";
 
 export default getPackageVersion()
-	.then(version =>
-		// eslint-disable-next-line no-console
-		console.log(bold(`@vangware/create-package v${version}\n`)),
-	)
+	// eslint-disable-next-line no-console
+	.then(version => console.log(bold`@vangware/create-package v${version}\n`))
 	.then(prompt)
 	.then(answers =>
 		createDirectory(answers.name)

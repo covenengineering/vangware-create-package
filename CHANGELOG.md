@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.10
+
+-   :arrow_up: dependency upgrade.
+-   :building_construction: update code to use tagged templates.
+
 ## 1.0.9
 
 -   :rewind: f\*ck Windows, just use a POSIX terminal.
