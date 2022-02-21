@@ -1,5 +1,4 @@
 import { mkdir } from "node:fs/promises";
-import type { URLOrString } from "./types/URLOrString.js";
+import type { Path } from "./types/Path.js";
 
-export const createDirectory = (name: URLOrString) =>
-	mkdir(name, { recursive: true });
+export const createDirectory = (name: Path) => mkdir(name, { recursive: true });
