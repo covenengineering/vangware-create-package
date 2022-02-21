@@ -1,4 +1,3 @@
-import type { URLOrString } from "./types/URLOrString.js";
+import type { Path } from "./types/Path.js";
 
-export const createURL = (base: URLOrString) => (path: URLOrString) =>
-	new URL(path, base);
+export const createURL = (base: Path) => (path: Path) => new URL(path, base);
