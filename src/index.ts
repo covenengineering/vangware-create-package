@@ -7,6 +7,7 @@ import { createDirectory } from "./createDirectory.js";
 import { doneMessage } from "./doneMessage.js";
 import { getPackageDevDependencies } from "./getPackageDevDependencies.js";
 import { getPackageVersion } from "./getPackageVersion.js";
+import { gitIgnoreFix } from "./gitIgnoreFix.js";
 import { prompt } from "./prompt.js";
 
 export default getPackageVersion()
@@ -16,6 +17,7 @@ export default getPackageVersion()
 	.then(answers =>
 		createDirectory(answers.name)
 			.then(copyBase(answers.name))
+			.then(gitIgnoreFix(answers.name))
 			.then(getPackageDevDependencies)
 			.then(devDependencies => ({ ...answers, devDependencies }))
 			.then(copyTemplates)
