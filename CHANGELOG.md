@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.14
+
+-   :arrow_up: dependency upgrade.
+-   :bug: fix template test.
+-   :bug: fix template `package.json`.
+
 ## 1.0.13
 
 -   :arrow_up: dependency upgrade.

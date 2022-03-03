@@ -1,11 +1,11 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { greet } from "../src/index.js";
 
-export default suite([
+export default [
 	{
 		given: "a name",
 		must: "greet that name",
 		received: greet("Vangware"),
 		wanted: "Hello, Vangware!",
 	},
-]);
+] as Tests<string>;
