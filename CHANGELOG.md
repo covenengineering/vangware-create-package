@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.15
+
+-   :arrow_up: dependency upgrade.
+-   :rotating_light: add missing `@returns` in `index.ts`.
+
 ## 1.0.14
 
 -   :arrow_up: dependency upgrade.
