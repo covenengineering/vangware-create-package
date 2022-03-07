@@ -22,5 +22,7 @@ export const prompt = (): Promise<Answers> =>
 				validate: hasValidLength(1)(58),
 			},
 		],
+		// Because `Promise.reject` is truthy, we continue by rejecting.
+		// eslint-disable-next-line @typescript-eslint/no-misused-promises
 		{ onCancel: () => Promise.reject("Cancelled") },
 	);
