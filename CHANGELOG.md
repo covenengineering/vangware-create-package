@@ -1,8 +1,12 @@
 # Change log
 
-All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](https://semver.org/).
-This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
+All notable changes to this project will be documented in this file. This
+project adheres to [Semantic Versioning](https://semver.org/). This project uses
+[Gitmoji](https://gitmoji.carloscuesta.me/)
+
+## 1.0.19
+
+-   :arrow_up: dependency upgrade.
 
 ## 1.0.18
 
@@ -88,7 +92,8 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 ## 1.0.1
 
 -   :art: improved CLI output with something better than "Done!".
--   :building_construction: change `package.json` template to include dependencies.
+-   :building_construction: change `package.json` template to include
+    dependencies.
 -   :building_construction: change base template to include an index and tests.
 
 ## 1.0.0
