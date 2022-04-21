@@ -5,4 +5,4 @@ pre-push:
         pre-compile:
             run: tsc --noEmit
         lint:
-            run: eslint {src,tests}/**/*.ts
+            run: eslint {src,tests} --ext .ts

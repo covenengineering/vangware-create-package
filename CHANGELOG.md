@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/). This project uses
 [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.23
+
+-   :arrow_up: dependency upgrade.
+-   :building_construction: change template to have better eslint config.
+
 ## 1.0.22
 
 -   :arrow_up: dependency upgrade.
