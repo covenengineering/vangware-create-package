@@ -48,8 +48,8 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 				clean: "rimraf ./dist",
 				compile: "tsc --project ./tsconfig.dist.json",
 				document: "typedoc",
-				lint: "eslint {src,tests}/*.ts",
-				"lint:fix": "eslint {src,tests}/**/*.ts --fix",
+				lint: "eslint {src,tests} --ext .ts",
+				"lint:fix": "eslint {src,tests} --ext .ts --fix",
 				"pre-compile": "tsc --noEmit --project tsconfig.dist.json",
 				prepublishOnly: "run-s clean compile prettify",
 				prettify:

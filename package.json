@@ -47,8 +47,8 @@
 	"scripts": {
 		"clean": "rimraf ./dist",
 		"compile": "tsc",
-		"lint": "eslint ./src/*.ts",
-		"lint:fix": "eslint src/**/*.ts --fix",
+		"lint": "eslint src --ext .ts",
+		"lint:fix": "eslint src --ext .ts --fix",
 		"pre-compile": "tsc --noEmit",
 		"prepublishOnly": "run-s compile prettify",
 		"prettify": "prettier --write --loglevel warn './dist/**/*.{js,ts}'"
