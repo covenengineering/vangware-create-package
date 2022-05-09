@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/). This project uses
 [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.26
+
+-   :white_check_mark: update GitHub CI.
+
 ## 1.0.25
 
 -   :arrow_up: dependency upgrade.
