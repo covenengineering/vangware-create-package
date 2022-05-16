@@ -10,16 +10,16 @@
 	"bin": "./dist/index.js",
 	"bugs": "https://github.com/vangware/create-package/issues",
 	"dependencies": {
-		"@vangware/ansi": "^3.1.27",
+		"@vangware/ansi": "^3.1.28",
 		"prompts": "^2.4.2"
 	},
 	"devDependencies": {
-		"@types/node": "^17.0.31",
+		"@types/node": "^17.0.33",
 		"@types/prompts": "^2.0.14",
-		"@vangware/configs": "^2.1.6",
-		"@vangware/test": "^9.1.9",
-		"@vangware/types": "^2.4.7",
-		"c8": "^7.11.2",
+		"@vangware/configs": "^2.1.7",
+		"@vangware/test": "^9.1.10",
+		"@vangware/types": "^2.4.8",
+		"c8": "^7.11.3",
 		"eslint": "^8.15.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.6.2",
