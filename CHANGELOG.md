@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/). This project uses
 [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.29
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: cleanup `.eslintrc.cjs` and `.prettierrc.cjs`.
+
 ## 1.0.28
 
 -   :arrow_up: dependency upgrade.
