@@ -1,1 +1,1 @@
-module.exports = require("@vangware/configs/.stylelintrc.js");
+module.exports = require("@vangware/configs/.stylelintrc.cjs");
