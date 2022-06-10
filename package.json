@@ -10,21 +10,22 @@
 	"bin": "./dist/index.js",
 	"bugs": "https://github.com/vangware/create-package/issues",
 	"dependencies": {
-		"@vangware/ansi": "^3.1.30",
+		"@vangware/ansi": "^3.1.31",
 		"prompts": "^2.4.2"
 	},
 	"devDependencies": {
-		"@types/node": "^17.0.40",
+		"@evilmartians/lefthook": "^0.8.0",
+		"@types/node": "^17.0.41",
 		"@types/prompts": "^2.0.14",
-		"@vangware/configs": "^3.0.0",
-		"@vangware/test": "^9.1.12",
-		"@vangware/types": "^2.4.10",
+		"@vangware/configs": "^3.0.2",
+		"@vangware/test": "^9.1.13",
+		"@vangware/types": "^2.4.11",
 		"c8": "^7.11.3",
 		"eslint": "^8.17.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.6.2",
 		"rimraf": "^3.0.2",
-		"stylelint": "^14.8.5",
+		"stylelint": "^14.9.0",
 		"ts-node": "^10.8.1",
 		"typedoc": "^0.22.17",
 		"typescript": "^4.7.3"
@@ -47,10 +48,12 @@
 	"scripts": {
 		"clean": "rimraf ./dist",
 		"compile": "tsc",
+		"git:pre-push": "run-s --print-label clean pre-compile lint",
 		"lint": "eslint src --ext .ts",
 		"lint:fix": "eslint src --ext .ts --fix",
 		"pre-compile": "tsc --noEmit",
-		"prepublishOnly": "run-s compile prettify",
+		"prepare": "lefthook install",
+		"prepublishOnly": "run-s --print-label compile prettify",
 		"prettify": "prettier --write --loglevel warn './dist/**/*.{js,ts}'"
 	},
 	"type": "module"
