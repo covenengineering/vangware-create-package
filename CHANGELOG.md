@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/). This project uses
 [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.35
+
+-   :arrow_up: dependency upgrade.
+-   :memo: update `README.md` to use `create` instead of `init`.
+
 ## 1.0.34
 
 -   :arrow_up: dependency upgrade.
