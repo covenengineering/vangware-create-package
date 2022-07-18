@@ -10,7 +10,7 @@
 Just run this:
 
 ```bash
-npm init @vangware/package
+npm create @vangware/package
 ```
 
 And follow the prompts.
