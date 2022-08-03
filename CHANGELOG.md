@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/). This project uses
 [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.40
+
+-   :arrow_up: dependency upgrade.
+-   :art: logo update.
+
 ## 1.0.39
 
 -   :arrow_up: dependency upgrade.
