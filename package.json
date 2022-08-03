@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/create-package",
 	"description": "🚧 Project creation script",
-	"version": "1.0.38",
+	"version": "1.0.39",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
