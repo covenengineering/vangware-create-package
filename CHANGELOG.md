@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/). This project uses
 [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.46
+
+-   :arrow_up: dependency upgrade.
+-   :bento: update `index.test.ts` in template to use latest `@vangware/test`.
+
 ## 1.0.45
 
 -   :arrow_up: dependency upgrade.

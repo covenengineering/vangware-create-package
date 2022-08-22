@@ -5,7 +5,7 @@ export default [
 	{
 		given: "a name",
 		must: "greet that name",
-		received: greet("Vangware"),
-		wanted: "Hello, Vangware!",
+		received: () => greet("Vangware"),
+		wanted: () => "Hello, Vangware!",
 	},
 ] as Tests<string>;
