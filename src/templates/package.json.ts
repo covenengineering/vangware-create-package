@@ -60,6 +60,7 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 					"prettier --write --loglevel warn './dist/**/*.{js,ts}'",
 				test: "NODE_OPTIONS='--loader ts-node/esm' c8 test",
 			},
+			sideEffects: false,
 			type: "module",
 			types: "./dist/index.d.ts",
 		},
