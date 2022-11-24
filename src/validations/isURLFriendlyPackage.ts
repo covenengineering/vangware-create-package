@@ -4,7 +4,7 @@ export const isURLFriendlyPackage = (packageName: string) => {
 	const { groups: { namespace = "", namespacedPackageName = "" } = {} } =
 		packageName.match(
 			/^(?:@(?<namespace>[^/]+?)[/])?(?<namespacedPackageName>[^/]+?)$/u,
-		) ?? [];
+		) ?? ({} as Partial<RegExpMatchArray>);
 
 	return namespace !== "" && namespacedPackageName !== ""
 		? [namespace, namespacedPackageName].every(isURLFriendly)
