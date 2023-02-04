@@ -1,6 +1,6 @@
 {
 	"name": "@vangware/create-package",
-	"description": "🚧 Project creation script",
+	"description": "🚧 Vangware package scaffolder script",
 	"version": "1.0.64",
 	"author": {
 		"email": "hello@vangware.com",
@@ -10,31 +10,32 @@
 	"bin": "./dist/index.js",
 	"bugs": "https://github.com/vangware/create-package/issues",
 	"dependencies": {
-		"@vangware/ansi": "^5.0.11",
+		"@vangware/ansi": "^5.0.13",
 		"prompts": "^2.4.2"
 	},
 	"devDependencies": {
-		"@evilmartians/lefthook": "^1.2.7",
+		"@evilmartians/lefthook": "^1.2.8",
 		"@types/node": "^18.11.18",
 		"@types/prompts": "^2.4.2",
-		"@vangware/configs": "^3.4.4",
-		"@vangware/test": "^10.0.18",
-		"@vangware/types": "^4.0.5",
+		"@vangware/configs": "^3.4.7",
+		"@vangware/test": "^10.0.19",
+		"@vangware/types": "^4.1.1",
 		"c8": "^7.12.0",
-		"eslint": "^8.32.0",
+		"eslint": "^8.33.0",
+		"markdown-to-html-cli": "^3.5.2",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.8.3",
-		"rimraf": "^4.1.1",
+		"rimraf": "^4.1.2",
 		"stylelint": "^14.16.1",
 		"ts-node": "^10.9.1",
 		"typedoc": "^0.23.24",
-		"typescript": "^4.9.4"
+		"typescript": "^4.9.5"
 	},
 	"files": [
 		"dist/*",
 		"base/*"
 	],
-	"homepage": "https://github.com/vangware/create-package#readme",
+	"homepage": "https://create-package.vangware.com",
 	"keywords": [
 		"create",
 		"create-package",
@@ -48,7 +49,8 @@
 	"scripts": {
 		"clean": "rimraf ./dist",
 		"compile": "tsc",
-		"git:pre-push": "run-s --print-label clean pre-compile lint",
+		"document": "markdown-to-html --description='🚧 Vangware package scaffolder script' --output=docs/index.html --style='a { color: #0a8 !important; }'",
+		"git:pre-push": "run-s --print-label clean pre-compile lint document",
 		"lint": "eslint src --ext .ts",
 		"lint:fix": "eslint src --ext .ts --fix",
 		"pre-compile": "tsc --noEmit",

@@ -3,14 +3,24 @@
 ![License][license-badge] ![NPM Version][npm-version-badge]
 ![Open Issues][open-issues-badge]
 
-:construction: Project creation script.
+🚧 [Vangware][vangware] package scaffolder script.
+
+## What's included?
+
+-   A GitHub scaffold to run tests and linting on every push.
+-   VSCode configurations.
+-   An example function with example tests.
+-   A few shared [Vangware][vangware] dependencies.
+-   Shared [Vangware][vangware] [configurations][vangware-configs].
+-   A lot of assumptions for [Vangware][vangware] are done, so this might not be
+    for you.
 
 ## Usage
 
-Just run this:
+Run the following command:
 
 ```bash
-npm create @vangware/package
+pnpm create @vangware/package # or whatever the equivalent to `create` is in your package manager
 ```
 
 And follow the prompts.
@@ -28,3 +38,5 @@ Changelog can be found [HERE][changelog].
 	https://img.shields.io/npm/v/@vangware/create-package.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://npm.im/@vangware/create-package
 [open-issues-badge]:
 	https://img.shields.io/github/issues/vangware/create-package.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/create-package/issues
+[vangware]: https://vangware.com
+[vangware-configs]: https://configs.vangware.com
