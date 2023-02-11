@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/). This project uses
 [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.2.0
+
+-   ⬆️ dependency upgrade.
+-   🔥 remove `.editorconfig`.
+-   👷 update CI config.
+-   🔧 update configs with new `@vangware/configs`.
+
 ## 1.1.0
 
 -   ⬆️ dependency upgrade.
