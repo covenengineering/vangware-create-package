@@ -6,7 +6,7 @@ export default ({ name }: TemplateData) =>
 		{
 			$schema: "https://typedoc.org/schema.json",
 			cname: `${userClean(name)}.vangware.com`,
-			entryPoints: ["./lib"],
+			entryPoints: ["./src"],
 			extends: ["@vangware/configs/typedoc.json"],
 			name,
 		},
