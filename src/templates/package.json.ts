@@ -51,8 +51,8 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 				document: "typedoc",
 				"git:pre-push":
 					"run-s --print-label clean pre-compile lint test document",
-				lint: "eslint {src,tests} --ext .ts",
-				"lint:fix": "eslint {src,tests} --ext .ts --fix",
+				lint: "eslint {src,tests}",
+				"lint:fix": "eslint {src,tests} --fix",
 				"pre-compile": "tsc --noEmit --project tsconfig.dist.json",
 				prepare: "lefthook install",
 				prepublishOnly: "run-s --print-label clean compile prettify",
