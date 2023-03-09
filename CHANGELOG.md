@@ -1,8 +1,13 @@
 # Change log
 
-All notable changes to this project will be documented in this file. This
-project adheres to [Semantic Versioning](https://semver.org/). This project uses
-[Gitmoji](https://gitmoji.carloscuesta.me/)
+All notable changes to this project will be documented in this file.
+
+-   This project adheres to [Semantic Versioning][semver].
+-   This project uses [Gitmoji][gitmoji]
+
+## 1.2.3
+
+-   ⬆️ dependency upgrade.
 
 ## 1.2.2
 
@@ -313,3 +318,8 @@ project adheres to [Semantic Versioning](https://semver.org/). This project uses
 ## 1.0.0
 
 -   🎉 Initial commit.
+
+<!-- References -->
+
+[gitmoji]: https://gitmoji.dev/
+[semver]: https://semver.org/
