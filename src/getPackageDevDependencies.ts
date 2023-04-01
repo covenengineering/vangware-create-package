@@ -8,7 +8,8 @@ export const getPackageDevDependencies = () =>
 		.then(
 			({
 				devDependencies,
-			}: {
-				readonly devDependencies: ReadOnlyRecord<string, string>;
-			}) => devDependencies,
+			}: ReadOnlyRecord<
+				"devDependencies",
+				ReadOnlyRecord<string, string>
+			>) => devDependencies,
 		);

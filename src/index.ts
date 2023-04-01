@@ -17,15 +17,15 @@ const readlineInterface = createInterface({
 	input: process.stdin,
 	output: process.stdout,
 });
+const createQuestion = question(readlineInterface);
 
 export default getPackageVersion()
 	// eslint-disable-next-line no-console
 	.then(version => console.log(bold`@vangware/create-package v${version}\n`))
 	.then(() =>
-		question({
+		createQuestion({
 			format: (name: string) => name.trim().toLocaleLowerCase("en-US"),
 			query: bold`Name:`,
-			readlineInterface,
 			retry: true,
 			validate: isValidPackageName,
 		}),
@@ -36,10 +36,9 @@ export default getPackageVersion()
 			.then(gitIgnoreFix(name))
 			.then(getPackageDevDependencies)
 			.then(devDependencies =>
-				question({
+				createQuestion({
 					format: (description: string) => description.trim(),
 					query: bold`Description:`,
-					readlineInterface,
 					retry: true,
 					validate: hasValidLength(1)(58),
 				}).then(description => ({
