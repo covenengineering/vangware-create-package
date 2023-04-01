@@ -1,3 +1,3 @@
-import type { ReadOnlyDeep } from "@vangware/types";
+import type { ReadOnly } from "@vangware/types";
 
-export type Path = ReadOnlyDeep<URL> | string;
+export type Path = ReadOnly<URL> | string;
