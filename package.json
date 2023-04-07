@@ -8,17 +8,20 @@
 		"url": "https://vangware.com"
 	},
 	"bin": "./dist/index.js",
-	"bugs": "https://github.com/vangware/create-package/issues",
+	"bugs": {
+		"email": "issues@vangware.com",
+		"url": "https://github.com/vangware/create-package/issues"
+	},
 	"dependencies": {
-		"@vangware/ansi": "^6.1.0",
-		"@vangware/prompts": "^2.0.0"
+		"@vangware/ansi": "^6.1.3",
+		"@vangware/prompts": "^2.1.0"
 	},
 	"devDependencies": {
-		"@evilmartians/lefthook": "^1.3.8",
+		"@evilmartians/lefthook": "^1.3.9",
 		"@types/node": "^18.15.11",
-		"@vangware/configs": "^4.1.6",
-		"@vangware/test": "^10.1.0",
-		"@vangware/types": "^5.1.1",
+		"@vangware/configs": "^4.2.1",
+		"@vangware/test": "^10.1.1",
+		"@vangware/types": "^5.1.4",
 		"c8": "^7.13.0",
 		"eslint": "^8.37.0",
 		"markdown-to-html-cli": "^3.5.3",
