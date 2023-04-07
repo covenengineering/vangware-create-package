@@ -15,7 +15,10 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 				name: "Vangware",
 				url: "https://vangware.com",
 			},
-			bugs: `${HOST}/${USER}/${userClean(name)}/issues`,
+			bugs: {
+				email: "issues@vangware.com",
+				url: `${HOST}/${USER}/${userClean(name)}/issues`,
+			},
 			devDependencies: Object.fromEntries(
 				[
 					"@evilmartians/lefthook",
@@ -36,6 +39,7 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 			),
 			exports: {
 				".": "./dist/index.js",
+				"./*": "./dist/*",
 			},
 			files: ["dist"],
 			homepage: `${HOST}/${USER}/${userClean(name)}#readme`,
