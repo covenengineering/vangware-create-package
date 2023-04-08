@@ -33,7 +33,6 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 					"rimraf",
 					"stylelint",
 					"ts-node",
-					"typedoc",
 					"typescript",
 				].map(key => [key, devDependencies[key]]),
 			),
@@ -52,9 +51,8 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 			scripts: {
 				clean: "rimraf ./dist",
 				compile: "tsc --project ./tsconfig.dist.json",
-				document: "typedoc",
 				"git:pre-push":
-					"run-s --print-label clean pre-compile lint test document",
+					"run-s --print-label clean pre-compile lint test",
 				lint: "eslint {src,tests}",
 				"lint:fix": "eslint {src,tests} --fix",
 				"pre-compile": "tsc --noEmit --project tsconfig.dist.json",
@@ -62,7 +60,7 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 				prepublishOnly: "run-s --print-label clean compile prettify",
 				prettify:
 					"prettier --write --loglevel warn './dist/**/*.{js,ts}'",
-				test: "NODE_OPTIONS='--loader ts-node/esm' c8 test",
+				test: "NODE_OPTIONS='--loader ts-node/esm --no-warnings' c8 test",
 			},
 			sideEffects: false,
 			type: "module",
