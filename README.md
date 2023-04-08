@@ -1,4 +1,4 @@
-<img alt="Vangware's Create Package" src="./logo.svg" height="128" />
+<img id="logo" alt="Create Package by Vangware" src="./logo.svg" height="128" />
 
 ![License][license-badge] ![NPM Version][npm-version-badge]
 ![Open Issues][open-issues-badge]
