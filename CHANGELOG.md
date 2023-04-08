@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.4.0
+
+-   ⬆️ dependency upgrade.
+-   🔧 `typedoc` now is run as a GitHub action.
+-   🔧 Removed node warnings in tests.
+-   🍱 add default `favicon.ico`.
+-   🍱 add default `logo.svg`.
+
 ## 1.3.0
 
 -   ⬆️ dependency upgrade.
