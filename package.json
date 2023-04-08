@@ -24,7 +24,6 @@
 		"@vangware/types": "^5.1.5",
 		"c8": "^7.13.0",
 		"eslint": "^8.38.0",
-		"markdown-to-html-cli": "^3.5.3",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.8.7",
 		"rimraf": "^4.4.1",
@@ -43,6 +42,22 @@
 		"package"
 	],
 	"license": "MIT",
+	"markdown-to-html": {
+		"document": {
+			"title": "@vangware/create-package",
+			"description": "🚧 Vangware package scaffolder script",
+			"style": "a { color: #0a8 !important; }",
+			"meta": [
+				{
+					"description": "🚧 Vangware package scaffolder script"
+				},
+				{
+					"keywords": "npm,node,create,create-package,package,scaffold,vangware"
+				}
+			]
+		},
+		"favicon": "/favicon.ico"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/vangware/create-package.git"
@@ -50,8 +65,7 @@
 	"scripts": {
 		"clean": "rimraf ./dist",
 		"compile": "tsc",
-		"document": "markdown-to-html --description='🚧 Vangware package scaffolder script' --output=docs/index.html --style='a { color: #0a8 !important; }'",
-		"git:pre-push": "run-s --print-label clean pre-compile lint document",
+		"git:pre-push": "run-s --print-label clean pre-compile lint",
 		"lint": "eslint src",
 		"lint:fix": "eslint src --fix",
 		"pre-compile": "tsc --noEmit",
