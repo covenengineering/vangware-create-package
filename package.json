@@ -44,12 +44,12 @@
 	"license": "MIT",
 	"markdown-to-html": {
 		"document": {
-			"title": "@vangware/create-package",
-			"description": "🚧 Vangware package scaffolder script",
-			"style": "a { color: #0a8 !important; }",
+			"title": "Create Package by Vangware",
+			"description": "Vangware package scaffolder script",
+			"style": "@import url(https://rsms.me/inter/inter.css); @import url(https://fonts.bunny.net/css?family=fira-code:400,700&display=swap); dark-mode, markdown-style { font-family: 'Inter var', sans-serif; font-feature-settings: 'cv11', 'ss01'; font-variation-settings: 'opsz' 32; } markdown-style tt, markdown-style code { font-family: 'Fira Code', monospace; font-variant-ligatures: common-ligatures; } a { color: #0a8 !important; } #logo { margin: 1rem auto !important; }",
 			"meta": [
 				{
-					"description": "🚧 Vangware package scaffolder script"
+					"description": "Vangware package scaffolder script"
 				},
 				{
 					"keywords": "npm,node,create,create-package,package,scaffold,vangware"
