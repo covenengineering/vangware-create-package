@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 -   🔧 Removed node warnings in tests.
 -   🍱 add default `favicon.ico`.
 -   🍱 add default `logo.svg`.
+-   🏗️ docs for `create-package` now come from a GitHub action.
 
 ## 1.3.0
 
