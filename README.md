@@ -20,14 +20,19 @@
 Run the following command:
 
 ```bash
-pnpm create @vangware/package # or whatever the equivalent to `create` is in your package manager
+pnpm create @vangware/package
+# or
+npm create @vangware/package
+# or
+yarn create @vangware/package
 ```
 
 And follow the prompts.
 
-## Changelog
+## Useful links
 
-Changelog can be found [HERE][changelog].
+-   📝 [Official site][site]: Vangware's site for Create Package.
+-   ⏳ [Changelog][changelog]: List of changes between versions.
 
 <!-- Reference -->
 
@@ -38,5 +43,6 @@ Changelog can be found [HERE][changelog].
 	https://img.shields.io/npm/v/@vangware/create-package.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://npm.im/@vangware/create-package
 [open-issues-badge]:
 	https://img.shields.io/github/issues/vangware/create-package.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/create-package/issues
+[site]: https://create-package.vangware.com
 [vangware]: https://vangware.com
 [vangware-configs]: https://configs.vangware.com
