@@ -2,8 +2,10 @@ import { HOST, USER } from "../constants.js";
 import type { TemplateData } from "../types/TemplateData.js";
 import { userClean } from "../userClean.js";
 
-export default ({ name, description, devDependencies }: TemplateData) =>
-	JSON.stringify(
+export default ({ name, description, devDependencies }: TemplateData) => {
+	const path = `${HOST}/${USER}/${userClean(name)}`;
+
+	return JSON.stringify(
 		{
 			name,
 			// eslint-disable-next-line sort-keys
@@ -17,7 +19,7 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 			},
 			bugs: {
 				email: "issues@vangware.com",
-				url: `${HOST}/${USER}/${userClean(name)}/issues`,
+				url: `${path}/issues`,
 			},
 			devDependencies: Object.fromEntries(
 				[
@@ -41,12 +43,12 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 				"./*": "./dist/*",
 			},
 			files: ["dist"],
-			homepage: `${HOST}/${USER}/${userClean(name)}#readme`,
+			homepage: `${path}#readme`,
 			keywords: ["typescript", "vangware"],
 			license: "MIT",
 			repository: {
 				type: "git",
-				url: `${HOST}/${USER}/${userClean(name)}.git`,
+				url: `${path}.git`,
 			},
 			scripts: {
 				clean: "rimraf ./dist",
@@ -69,3 +71,4 @@ export default ({ name, description, devDependencies }: TemplateData) =>
 		undefined,
 		"	",
 	);
+};
