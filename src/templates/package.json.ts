@@ -1,8 +1,18 @@
+import type { KeyOf, ReadOnlyArray } from "@vangware/types";
 import { HOST, USER } from "../constants.js";
-import type { TemplateData } from "../types/TemplateData.js";
+import type { Answers } from "../types/Answers.js";
 import { userClean } from "../userClean.js";
 
-export default ({ name, description, devDependencies }: TemplateData) => {
+export default ({
+	name,
+	description,
+	packageConfiguration: {
+		author,
+		bugs: { email },
+		devDependencies,
+		engines,
+	},
+}: Answers) => {
 	const path = `${HOST}/${USER}/${userClean(name)}`;
 
 	return JSON.stringify(
@@ -12,32 +22,30 @@ export default ({ name, description, devDependencies }: TemplateData) => {
 			description,
 			version: "1.0.0",
 			// eslint-disable-next-line sort-keys
-			author: {
-				email: "hello@vangware.com",
-				name: "Vangware",
-				url: "https://vangware.com",
-			},
+			author,
 			bugs: {
-				email: "issues@vangware.com",
+				email,
 				url: `${path}/issues`,
 			},
 			devDependencies: Object.fromEntries(
-				[
-					"@evilmartians/lefthook",
-					"@types/node",
-					"@vangware/configs",
-					"@vangware/test",
-					"@vangware/types",
-					"c8",
-					"eslint",
-					"npm-run-all",
-					"prettier",
-					"rimraf",
-					"stylelint",
-					"ts-node",
-					"typescript",
-				].map(key => [key, devDependencies[key]]),
+				(
+					[
+						"@evilmartians/lefthook",
+						"@types/node",
+						"@vangware/configs",
+						"@vangware/test",
+						"@vangware/types",
+						"c8",
+						"eslint",
+						"npm-run-all",
+						"prettier",
+						"rimraf",
+						"ts-node",
+						"typescript",
+					] satisfies ReadOnlyArray<KeyOf<typeof devDependencies>>
+				).map(key => [key, devDependencies[key]]),
 			),
+			engines,
 			exports: {
 				".": "./dist/index.js",
 				"./*": "./dist/*",

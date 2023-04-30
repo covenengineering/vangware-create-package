@@ -8,4 +8,4 @@ export default [
 		received: () => greet("Vangware"),
 		wanted: () => "Hello, Vangware!",
 	},
-] as Tests<string>;
+] satisfies Tests<string>;
