@@ -1,8 +1,8 @@
 import { HOST, USER } from "../constants.js";
-import type { TemplateData } from "../types/TemplateData.js";
+import type { Answers } from "../types/Answers.js";
 import { userClean } from "../userClean.js";
 
-export default ({ name, description }: TemplateData) => {
+export default ({ name, description }: Answers) => {
 	const path = `${USER}/${userClean(name)}`;
 
 	return `<img id="logo" alt="${userClean(
