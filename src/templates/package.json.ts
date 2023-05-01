@@ -40,7 +40,7 @@ export default ({
 						"npm-run-all",
 						"prettier",
 						"rimraf",
-						"ts-node",
+						"tsx",
 						"typescript",
 					] satisfies ReadOnlyArray<KeyOf<typeof devDependencies>>
 				).map(key => [key, devDependencies[key]]),
@@ -70,7 +70,7 @@ export default ({
 				prepublishOnly: "run-s --print-label clean compile prettify",
 				prettify:
 					"prettier --write --loglevel warn './dist/**/*.{js,ts}'",
-				test: "NODE_OPTIONS='--loader ts-node/esm --no-warnings' c8 test",
+				test: "NODE_OPTIONS='--loader tsx --no-warnings' c8 test",
 			},
 			sideEffects: false,
 			type: "module",

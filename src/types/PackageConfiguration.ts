@@ -27,7 +27,7 @@ export type PackageConfiguration = ReadOnly<{
 		prettier: string;
 		rimraf: string;
 		stylelint: string;
-		"ts-node": string;
+		tsx: string;
 		typescript: string;
 	};
 	engines: { node: string; pnpm: string };
