@@ -20,13 +20,14 @@ const createQuestion = question(readlineInterface);
 
 export default getPackageConfiguration()
 	.then(
-		packageConfiguration => (
-			// eslint-disable-next-line no-console
-			console.log(
-				bold`@vangware/create-package v${packageConfiguration.version}\n`,
+		packageConfiguration =>
+			(
+				// eslint-disable-next-line no-console
+				console.log(
+					bold`@vangware/create-package v${packageConfiguration.version}\n`,
+				),
+				packageConfiguration
 			),
-			packageConfiguration
-		),
 	)
 	.then(packageConfiguration =>
 		createQuestion({

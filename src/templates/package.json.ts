@@ -69,7 +69,7 @@ export default ({
 				prepare: "lefthook install",
 				prepublishOnly: "run-s --print-label clean compile prettify",
 				prettify:
-					"prettier --write --loglevel warn './dist/**/*.{js,ts}'",
+					"prettier --ignore-path=.prettierignore --log-level=warn --write './dist/**/*.{js,ts}'",
 				test: "NODE_OPTIONS='--loader tsx --no-warnings' c8 test",
 			},
 			sideEffects: false,
