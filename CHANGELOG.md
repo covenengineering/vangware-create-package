@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.6.12
+
+-   🐛 fix bug with `package.json` path (and again).
+
 ## 1.6.11
 
 -   🐛 fix bug with `package.json` path (again).
