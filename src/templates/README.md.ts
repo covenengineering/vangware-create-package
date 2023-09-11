@@ -66,18 +66,18 @@ Import \`${name}\` using [esm.sh][esm.sh], and use it directly:
 
 <!-- Reference -->
 
-[changelog]: https://${HOST}/${path}/blob/main/CHANGELOG.md
+[changelog]: ${HOST}/${path}/blob/main/CHANGELOG.md
 [coverage-badge]:
 	https://img.shields.io/coveralls/github/${path}.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://coveralls.io/github/${path}
 [coverage]: https://coveralls.io/github/${path}
 [documentation]: https://${userClean(name)}.${USER}.com
 [esm.sh]: https://esm.sh
 [license-badge]:
-	https://img.shields.io/npm/l/${name}.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://${HOST}/${path}/blob/main/LICENSE
+	https://img.shields.io/npm/l/${name}.svg?style=for-the-badge&labelColor=666&color=0a8&link=${HOST}/${path}/blob/main/LICENSE
 [npm-version-badge]:
 	https://img.shields.io/npm/v/${name}.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://npm.im/${name}
 [open-issues-badge]:
-	https://img.shields.io/github/issues/${path}.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://${HOST}/${path}/issues
+	https://img.shields.io/github/issues/${path}.svg?style=for-the-badge&labelColor=666&color=0a8&link=${HOST}/${path}/issues
 [vangware]: https://vangware.com
 `;
 };
