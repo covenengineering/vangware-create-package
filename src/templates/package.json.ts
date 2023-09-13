@@ -30,7 +30,6 @@ export default ({
 			devDependencies: Object.fromEntries(
 				(
 					[
-						"@evilmartians/lefthook",
 						"@types/node",
 						"@vangware/configs",
 						"@vangware/test",
@@ -40,6 +39,7 @@ export default ({
 						"npm-run-all",
 						"prettier",
 						"rimraf",
+						"simple-git-hooks",
 						"tsx",
 						"typescript",
 					] satisfies ReadOnlyArray<KeyOf<typeof devDependencies>>
@@ -61,18 +61,20 @@ export default ({
 			scripts: {
 				clean: "rimraf ./dist",
 				compile: "tsc --project ./tsconfig.dist.json",
-				"git:pre-push":
-					"run-s --print-label clean pre-compile lint test",
 				lint: "eslint {src,tests}",
 				"lint:fix": "eslint {src,tests} --fix",
 				"pre-compile": "tsc --noEmit --project tsconfig.dist.json",
-				prepare: "lefthook install",
+				prepare: "simple-git-hooks",
 				prepublishOnly: "run-s --print-label clean compile prettify",
 				prettify:
 					"prettier --ignore-path=.prettierignore --log-level=warn --write './dist/**/*.{js,ts}'",
 				test: "NODE_OPTIONS='--loader tsx --no-warnings' c8 test",
 			},
 			sideEffects: false,
+			"simple-git-hooks": {
+				"pre-push":
+					"$(pwd)/node_modules/.bin/run-s --print-label clean pre-compile lint test",
+			},
 			type: "module",
 			types: "./dist/index.d.ts",
 		},

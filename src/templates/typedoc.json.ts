@@ -7,7 +7,7 @@ export default ({ name }: Answers) =>
 			$schema: "https://typedoc.org/schema.json",
 			cname: `${userClean(name)}.vangware.com`,
 			entryPoints: ["./src"],
-			extends: ["@vangware/configs/typedoc.json"],
+			extends: ["@vangware/configs/typedoc.config.json"],
 			name,
 		},
 		undefined,

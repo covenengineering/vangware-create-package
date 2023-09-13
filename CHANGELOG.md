@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 1.7.0
+
+-   ⬆️ dependency upgrade.
+-   🏗️ update templates with some common changes.
+
 ## 1.6.15
 
 -   🔧 update `document.yml` and `test.yml` workflows.
