@@ -13,20 +13,20 @@
 		"url": "https://github.com/vangware/create-package/issues"
 	},
 	"dependencies": {
-		"@vangware/ansi": "^6.3.24",
-		"@vangware/prompts": "^2.2.3"
+		"@vangware/ansi": "^6.3.25",
+		"@vangware/prompts": "^2.2.4"
 	},
 	"devDependencies": {
-		"@evilmartians/lefthook": "^1.4.10",
 		"@types/node": "^20.6.0",
-		"@vangware/configs": "^5.1.7",
-		"@vangware/test": "^10.3.22",
-		"@vangware/types": "^6.2.5",
+		"@vangware/configs": "^6.0.0",
+		"@vangware/test": "^10.3.23",
+		"@vangware/types": "^6.2.6",
 		"c8": "^8.0.1",
 		"eslint": "^8.49.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^3.0.3",
 		"rimraf": "^5.0.1",
+		"simple-git-hooks": "^2.9.0",
 		"stylelint": "^15.10.3",
 		"tsx": "^3.12.9",
 		"typescript": "^5.2.2"
@@ -46,22 +46,6 @@
 		"package"
 	],
 	"license": "MIT",
-	"markdown-to-html": {
-		"document": {
-			"title": "Create Package by Vangware",
-			"description": "Vangware package scaffolder script",
-			"style": "@import url(https://rsms.me/inter/inter.css); @import url(https://fonts.bunny.net/css?family=fira-code:400,700&display=swap); dark-mode, markdown-style { font-family: 'Inter var', sans-serif; font-feature-settings: 'cv11', 'ss01'; font-variation-settings: 'opsz' 32; } markdown-style tt, markdown-style code { font-family: 'Fira Code', monospace; font-variant-ligatures: common-ligatures; } a { color: #0a8 !important; } #logo { margin: 1rem auto !important; }",
-			"meta": [
-				{
-					"description": "Vangware package scaffolder script"
-				},
-				{
-					"keywords": "npm,node,create,create-package,package,scaffold,vangware"
-				}
-			]
-		},
-		"favicon": "/favicon.ico"
-	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/vangware/create-package.git"
@@ -69,14 +53,16 @@
 	"scripts": {
 		"clean": "rimraf ./dist",
 		"compile": "tsc",
-		"git:pre-push": "run-s --print-label clean pre-compile lint",
 		"lint": "eslint src",
 		"lint:fix": "eslint src --fix",
 		"pre-compile": "tsc --noEmit",
-		"prepare": "lefthook install",
+		"prepare": "simple-git-hooks",
 		"prepublishOnly": "run-s --print-label compile prettify",
 		"prettify": "prettier --ignore-path=.prettierignore --log-level=warn --write './dist/**/*.{js,ts}'"
 	},
 	"sideEffects": false,
+	"simple-git-hooks": {
+		"pre-push": "$(pwd)/node_modules/.bin/run-s --print-label clean pre-compile lint"
+	},
 	"type": "module"
 }

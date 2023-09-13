@@ -1,0 +1,7 @@
+{
+	"$schema": "https://typedoc.org/schema.json",
+	"cname": "create-package.vangware.com",
+	"entryPoints": [],
+	"extends": ["@vangware/configs/typedoc.config.json"],
+	"name": "Create Package by Vangware"
+}

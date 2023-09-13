@@ -16,7 +16,6 @@ export type PackageConfiguration = ReadOnly<{
 		"@vangware/prompts": string;
 	};
 	devDependencies: {
-		"@evilmartians/lefthook": string;
 		"@types/node": string;
 		"@vangware/configs": string;
 		"@vangware/test": string;
@@ -26,6 +25,7 @@ export type PackageConfiguration = ReadOnly<{
 		"npm-run-all": string;
 		prettier: string;
 		rimraf: string;
+		"simple-git-hooks": string;
 		stylelint: string;
 		tsx: string;
 		typescript: string;
@@ -35,20 +35,10 @@ export type PackageConfiguration = ReadOnly<{
 	homepage: string;
 	keywords: ReadOnlyArray<string>;
 	license: string;
-	"markdown-to-html": {
-		document: {
-			title: string;
-			description: string;
-			style: string;
-			meta: [{ description: string }, { keywords: string }];
-		};
-		favicon: string;
-	};
 	repository: { type: string; url: string };
 	scripts: {
 		clean: string;
 		compile: string;
-		"git:pre-push": string;
 		lint: string;
 		"lint:fix": string;
 		"pre-compile": string;
