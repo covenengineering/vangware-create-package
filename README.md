@@ -1,3 +1,5 @@
+# This repository's code was moved to [this monorepo](https://github.com/vangware/libraries/tree/main/packages/@vangware/create-package).
+
 <img id="logo" alt="Create Package by Vangware" src="./logo.svg" height="128" />
 
 ![License][license-badge] ![NPM Version][npm-version-badge]
